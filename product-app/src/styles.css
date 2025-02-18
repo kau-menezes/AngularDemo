@@ -1,0 +1,35 @@
+* 
+{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+nav
+{
+    height: 7vh;
+}
+
+main 
+{
+    min-height: 90vh;
+}
+
+footer
+{
+    background-color: rgb(135, 181, 202);
+    color: aliceblue;
+    text-align: center;
+    height: 3vh;
+}
+
+
+body
+{
+    
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(25, 25, 25);
+    font-weight: 500;
+
+}
+
