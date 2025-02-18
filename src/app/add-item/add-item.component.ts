@@ -30,8 +30,12 @@ export class AddItemComponent {
   }
 
   sendInput() {
-    this.onSendInput.emit(this.currentItem)
-    this.currentItem = ""
+
+    if (this.currentItem != "")
+    {
+      this.onSendInput.emit(this.currentItem)
+      this.currentItem = ""
+    }
     
   }
 }

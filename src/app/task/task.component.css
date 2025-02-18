@@ -1,0 +1,28 @@
+.square {
+    width: 20px;
+    height: 20px;
+    border: 1px solid rgb(141, 141, 141);
+    border-radius: 100%;
+}
+
+li {
+
+    list-style: none;
+    color: rgb(87, 87, 87);
+    font-weight: 500;
+
+}
+
+.item {
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.img {
+    width: 20px;
+    height: 20px;
+}

@@ -2,10 +2,11 @@ import { Component, OnChanges, OnDestroy, OnInit, SimpleChanges } from '@angular
 import { RouterOutlet } from '@angular/router';
 import { AddItemComponent } from "../add-item/add-item.component";
 import { Languages, TranslatePipe } from '../translate.pipe';
+import { TaskComponent } from "../task/task.component";
 
 @Component({
   selector: 'todo-list',
-  imports: [AddItemComponent, TranslatePipe],
+  imports: [AddItemComponent, TranslatePipe, TaskComponent],
   templateUrl: './todo-list.component.html',
   styleUrl: './todo-list.component.css'
 })
