@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-pagination',
@@ -8,21 +8,26 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PaginationComponent {
 
-  quantity : number = 0;
-  limit : number  = 0;
+  @Input()
   pages : number = 0;
 
-  setQuantity(qt: number) {
-    this.quantity = qt;
-    this.calculatePages();
-  }
+  currentPage : number = 1;
 
-  calculatePages() {
-    this.pages = this.quantity / this.limit;
-    for (let i = 0; i < this.pages; i++) {
+  changePage(marker : number) {
+
+    if (marker < 0)
+    {
       
-      
+      this.currentPage + marker <= 0 ? this.currentPage = this.pages :  this.currentPage = this.currentPage + marker
     }
+
+    if (marker > 0)
+      {
+        this.currentPage + marker > this.pages ? this.currentPage = 1 : this.currentPage = this.currentPage + marker
+
+    
+      }
+
   }
 
 }

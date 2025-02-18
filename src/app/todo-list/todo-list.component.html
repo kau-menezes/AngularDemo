@@ -1,7 +1,7 @@
 <h1>{{'title' | translate:language }}<img src="clipboard.png" width="40" height="40" style="margin-left: 10px;"/></h1>
 
 <ul>
-    @for (item of items; track item)
+    @for (item of selectedItems; track item)
     {
         <app-task [item]="item"/>
     }

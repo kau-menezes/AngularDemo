@@ -1,5 +1,9 @@
-@let pages = 4;
-
 <div>
-
+    <div class="arrows">
+        <img width="30" height="30" src="left.png" alt="Left" (click)="changePage(-1)">
+        <p>{{currentPage}}</p>
+        <img width="30" height="30" src="right.png" alt="Right" (click)="changePage(1)">
+    </div>
+    
+    
 </div>

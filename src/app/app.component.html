@@ -1,5 +1,5 @@
 <main>
-    <todo-list language="en"/>
-    <app-pagination/>
+    <todo-list language="en" [currentPage]="pag.currentPage" #todo/>
+    <app-pagination [pages]="todo.maxPage" #pag/>
 </main>
 <router-outlet/>
