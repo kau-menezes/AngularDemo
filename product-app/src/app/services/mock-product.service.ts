@@ -10,7 +10,7 @@ export class MockProductService {
   private products: IProduct[] = []
 
   constructor() {
-    this.iniitIfNeeded()
+    this.initIfNeeded()
    }
 
   addProduct(product: IProduct) {
@@ -29,11 +29,15 @@ export class MockProductService {
     return null
   }
 
+  getProducts() {
+    return this.products;
+  }
+
   private save() {
     localStorage.setItem('mock-products', JSON.stringify(this.products))
   }
 
-  private iniitIfNeeded() {
+  private initIfNeeded() {
     let data = localStorage.getItem('mock-products');
 
     if (!data) {
@@ -51,22 +55,22 @@ export class MockProductService {
         id: 1,
         title: "Product 1",
         price: 10,
-        desription: "Description of product 1"
+        description: "Description of product 1"
       },
       {
         id: 2,
         title: "Product 2",
         price: 10,
-        desription: "Description of product 2"
+        description: "Description of product 2"
       },
       {
         id: 1,
         title: "Product 3",
         price: 10,
-        desription: "Description of product 3"
+        description: "Description of product 3"
       }
     ]
-    
+
     this.nextId = 4;
   }
 

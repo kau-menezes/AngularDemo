@@ -1,0 +1,45 @@
+/* You can add global styles to this file, and also import other style files */
+
+@use '@angular/material' as mat;
+
+// Global customization (like for Material chips)
+:root {
+  @include mat.chips-overrides((
+    label-text-font: ember,
+    disabled-outline-color: red,
+  ));
+
+  @include mat.icon-overrides((
+    color: #BA005C
+  ));
+}
+
+.mat-icon-gray {
+  @include mat.icon-overrides((
+    color: #686868
+  ));
+}
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+header {
+    height: 10vh;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+    min-height: 90vh;
+}
+
+body { 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    color: #252525;
+}

@@ -1,0 +1,96 @@
+.main-container {
+
+    /* font-family: bookerly; */
+    display: flex;
+
+    background-color: rgb(255, 255, 255);
+
+    max-width: 80vw;
+    min-height: 60vh;
+
+    border-radius: 16px;
+
+    box-shadow: rgba(143, 143, 143, 0.25) 0px 13px 27px -5px, rgba(226, 226, 226, 0.3) 0px 8px 16px -8px;
+
+    overflow: hidden;
+
+}
+
+.book-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    
+    padding: 40px;
+    
+}
+
+h2 {
+    font-family: bookerly;
+    color: #3b3b3b;
+}
+
+h3 {
+    font-family: ember;
+    color: #686868;
+}
+
+mat-chip {
+    color: #ffffff;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+
+.price-container {
+    color: #BF1469;
+    display: flex;
+    align-items:flex-start;
+}
+
+.dol {
+    font-size: medium;
+    font-family: bookerly-display;
+
+
+}
+
+
+.price {
+    font-family: bookerly-display;
+    font-size: x-large;
+    font-weight: 600;
+    text-align: start;
+    /* font-size: larger; */
+}
+
+.like {
+    width: 46px;
+    height: 46px;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+button {
+    cursor: pointer;
+}
+
+.info {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+p {
+    font-family: ember;
+    color: #686868;
+}

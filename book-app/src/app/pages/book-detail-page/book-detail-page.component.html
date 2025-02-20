@@ -1,0 +1,39 @@
+<div class="main-container">
+        <img mat-card-image src="book.jpeg" alt="Book">
+        <div class="book-info">
+                <div class="title">
+                        <h2>{{(book | async)?.title}}</h2>
+                        <h3>{{(book | async)?.author}}</h3>
+                </div>
+                <div class="more-info">
+                        <div class="info">
+                                <mat-icon class="mat-icon-gray">calendar_today</mat-icon>
+                                <p>{{(book | async)?.year}}</p>
+                        </div>
+                        <div class="info">
+                                <mat-icon class="mat-icon-gray"  >auto_stories</mat-icon>
+                                <p>{{(book | async)?.pages}}</p>
+                        </div>
+                        <div class="avaliation">
+                               
+                        </div>
+                        <p>{{(book | async)?.avaliation}}</p>
+                </div>
+                <mat-chip-set aria-label="Book Genres">
+                        @for (g of (book | async)?.genres; track g)
+                        {
+                                <mat-chip>{{g}}</mat-chip>
+                        }
+                </mat-chip-set>
+                <div class="price-container">
+                        <p class="dol">$</p>
+                        <p class="price">{{(book | async)?.price}}</p>
+                </div>
+                <div class="button">
+                        <button mat-flat-button>Add to Cart</button>
+                        <button  mat-mini-fab aria-label="Example icon button with a heart icon">
+                                <mat-icon >favorite</mat-icon>
+                        </button>
+                </div>
+        </div>
+</div>

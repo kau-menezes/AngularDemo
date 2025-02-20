@@ -1,0 +1,14 @@
+@font-face {
+  font-family: bookerly-display;
+  src: url(BookerlyDisplay_Rg.ttf) format("opentype");
+}
+
+@font-face {
+  font-family: bookerly;
+  src: url(Bookerly-Regular.ttf) format("opentype");
+}
+
+@font-face {
+  font-family: ember;
+  src: url(AmazonEmber_Rg.ttf) format("opentype");
+}

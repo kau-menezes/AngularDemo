@@ -1,0 +1,24 @@
+.example-card {
+    display: flex;
+    flex-direction: column;
+}
+
+h2 {
+    font-family: bookerly;
+    color: #3b3b3b;
+}
+
+h3 {
+    font-family: ember;
+    color: #686868;
+}
+
+mat-chip {
+    color: #ffffff;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}

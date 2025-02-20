@@ -1,0 +1,6 @@
+<p>books-page works!</p>
+
+@for(b of (books | async)?.books; track $index)
+{
+    <p>{{b.title}}</p>
+}
