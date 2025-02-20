@@ -3,13 +3,13 @@
 <ul>
     @for (item of selectedItems; track item)
     {
-        <app-task [item]="item"/>
+        <app-task [task]="item"/>
     }
-
+<!-- 
     @if (current.currentItem != "")
     {
-        <app-task [item]="current.currentItem"/>
-    }
+        <app-task [task]="current"/>
+    } -->
 
     @if (items.length == 0 && current.currentItem == "")
     {

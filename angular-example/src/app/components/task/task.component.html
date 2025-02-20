@@ -1,0 +1,15 @@
+<div class="item">
+
+    @if (task?.status == 0)
+    {
+        <div class="square" class="item" (click)="changeStatus(task?.id, task?.status)" ></div>
+    } 
+
+    @if (task?.status == 1)
+    {
+        <img src="../../../assets/img/check.png" alt="Task completed" width="20" height="20" class="item" (click)="changeStatus(task?.id, task?.status)">
+    }
+
+    <li>{{task?.description}}</li>
+    <p class="item" (click)="deleteTask(task?.id)">🗑</p>
+</div>

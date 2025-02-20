@@ -1,5 +1,6 @@
-import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { Component, EventEmitter, Injectable, Input, Output } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { ITask } from '../../interfaces/ITask';
 
 @Component({
   selector: 'add-item',
@@ -7,13 +8,18 @@ import { FormsModule } from '@angular/forms';
   templateUrl: './add-item.component.html',
   styleUrl: './add-item.component.css'
 })
+
+@Injectable({
+  providedIn: 'root'
+})
+
 export class AddItemComponent {
 
   @Input()
   placeholder = "Type here your new task..."
 
   @Output()
-  onSendInput = new EventEmitter<string>();
+  onSendInput = new EventEmitter<ITask>();
 
   currentItem = "";
 
@@ -33,7 +39,10 @@ export class AddItemComponent {
 
     if (this.currentItem != "")
     {
-      this.onSendInput.emit(this.currentItem)
+      this.onSendInput.emit({
+        "description": this.currentItem, 
+        "status": 0
+      })
       this.currentItem = ""
     }
     
