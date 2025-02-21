@@ -12,11 +12,6 @@ import { ITask } from '../../interfaces/ITask';
   templateUrl: './todo-list.component.html',
   styleUrls: ['./todo-list.component.css']
 })
-
-@Injectable({
-  providedIn: 'root'
-})
-
 export class TodoListComponent implements OnInit, OnChanges, OnDestroy {
   language: Languages = "en";
   items: ITask[] = [];  
