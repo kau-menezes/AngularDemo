@@ -40,8 +40,8 @@ export class AddItemComponent {
     if (this.currentItem != "")
     {
       this.onSendInput.emit({
-        "description": this.currentItem, 
-        "status": 0
+        description: this.currentItem, 
+        status: 0
       })
       this.currentItem = ""
     }

@@ -1,5 +1,5 @@
 export interface ITask {
     description: string, 
     status: number,
-    id?: string
+    _id?: string
 }

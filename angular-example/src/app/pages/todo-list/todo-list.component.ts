@@ -32,6 +32,10 @@ export class TodoListComponent implements OnInit, OnChanges, OnDestroy {
     if (changes['currentPage']) {
       this.updateSelectedItems();
     }
+
+    if (changes['selectedItems']) {
+      // window.refresh()
+    }
   }
 
   ngOnInit(): void {

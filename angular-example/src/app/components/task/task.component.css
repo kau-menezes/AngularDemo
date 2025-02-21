@@ -20,9 +20,20 @@ li {
     gap: 10px;
     margin-top: 15px;
     margin-bottom: 15px;
+
+    .delete {
+        display: block;
+    }
 }
 
 .img {
+    cursor: pointer;
     width: 20px;
     height: 20px;
+    cursor: pointer;
+}
+
+.delete {
+    /* background-; */
+
 }
